@@ -1,0 +1,380 @@
+body {
+  background-color: gainsboro;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background: white;
+  padding: 1em;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 1.8em;
+}
+
+.span {
+  color: indigo;
+}
+
+nav {
+  display: none;
+}
+
+.container {
+  display: flex;
+  place-content: space-between;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+}
+
+.subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(218, 107, 107);
+  letter-spacing: 0.05em;
+}
+
+.left-column {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.3em;
+  margin-top: 0.2em;
+}
+
+.primary-cta {
+  background: indigo;
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.watch-video-img {
+  margin-right: 0.5em;
+}
+
+.features-section {
+  background: rgb(218, 107, 107);
+  color: white;
+}
+
+ul.features-list {
+  margin: 0;
+  padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(19rem, 1fr));
+}
+
+.li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+}
+
+.li:before {
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Bullets.svg");
+  background-size: contain;
+  margin-right: 0.5em;
+}
+.concert-image {
+  display: none;
+}
+
+.testimonials-section {
+  background-color: indigo;
+  color: white;
+}
+
+.first-feedback {
+  width: 5em;
+  height: 5em;
+  border: 5px solid rgb(82, 27, 122);
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.second-feedback {
+  width: 5em;
+  height: 5em;
+  border: 5px solid rgb(82, 27, 122);
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.third-feedback {
+  width: 5em;
+  height: 5em;
+  border: 5px solid rgb(82, 27, 122);
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+.li-feedback {
+  background-color: rgb(82, 27, 122);
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 1em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: indigo;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: 0.8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: rgb(218, 107, 107);
+  height: 100vh;
+  padding: 1em;
+}
+
+ul.primary-nav {
+  margin-top: 5em;
+}
+
+.a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 760px) {
+  .mobile-menu,
+  .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+
+  ul {
+    display: flex;
+  }
+  ul.primary-nav {
+    margin: 0;
+  }
+
+  li.current a {
+    font-weight: bold;
+  }
+  li.go-premium-cta a {
+    color: indigo;
+    border: 3px solid indigo;
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+
+  li.go-premium-cta a:hover {
+    background: indigo;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .left-column {
+    margin: 3em 3em 0 5em;
+  }
+  h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 50%;
+    margin-right: 2em;
+  }
+  .hero-cta {
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+
+  ul.features-list {
+    display: block;
+    margin-left: 7em;
+  }
+
+  .li {
+    font-size: 1.4em;
+  }
+
+  .li:before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .features-section {
+    position: relative;
+  }
+
+  .features-section img {
+    display: block;
+    position: absolute;
+    width: 350px;
+    right: 0;
+    bottom: -2em;
+  }
+
+  .testimonials-section ul {
+    display: flex;
+  }
+  .li-feedback {
+    margin: 0 1em;
+  }
+
+  .contact-section {
+    position: relative;
+  }
+  .container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: indigo;
+    left: 0;
+    top: -4em;
+  }
+
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../images/dots\ image.png") no-repeat;
+    left: 2.5em;
+    top: 2em;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-img {
+    width: 45%;
+  }
+}
